@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="#ECECEC"
+    tools:context=".Questoes">
+
+    <TextView
+        android:layout_width="524dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-200px"
+        android:layout_marginBottom="100px"
+        android:background="@drawable/nome" />
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Quanto tempo dura um sonho?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progress="0"
+            android:max="5"
+            android:minHeight="50dp"
+            style="?android:progressBarStyleHorizontal"/>
+        />
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/5"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/opt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="40 a 45 minutos"
+        android:textColor="#504E4E"
+        android:background="@drawable/opcao_pergunta"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/opt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/opcao_pergunta"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="2 a 3 minutos"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/opt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5 a 7 minutos"
+        android:background="@drawable/opcao_pergunta"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/opt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 a 3 horas"
+        android:background="@drawable/opcao_pergunta"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#6FC1F3"
+        android:text="Enviar"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
